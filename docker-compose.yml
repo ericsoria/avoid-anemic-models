@@ -1,0 +1,8 @@
+version: "3"
+services:
+  php-fpm:
+    image: phpdockerio/php74-fpm:latest
+    container_name: testa-php
+    working_dir: /app
+    volumes:
+      - .:/app
